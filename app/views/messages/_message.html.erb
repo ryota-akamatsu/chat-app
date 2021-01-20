@@ -10,7 +10,9 @@
     
   <div class="lower-comment">
     <div class="comment-content">
-      <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
+     <%= message.content %>
     </div>
+      <%= image_tag message.image.variant(resize: '500x500'), class: 'message-image' if message.image.attached? %>
+
   </div>
 </div>
